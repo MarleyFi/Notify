@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Notify.FrmNotify">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="btnBold" Hidden="true" />
+      <Method Name="btnBold_Click" Hidden="true" />
+      <Field Name="btnColor" Hidden="true" />
+      <Method Name="btnColor_Click" Hidden="true" />
+      <Field Name="btnLogin" Hidden="true" />
+      <Method Name="btnLogin_Click" Hidden="true" />
+      <Field Name="btnRestoreDefaults" Hidden="true" />
+      <Method Name="btnRestoreDefaults_Click" Hidden="true" />
+      <Field Name="btnSave" Hidden="true" />
+      <Method Name="btnSave_Click" Hidden="true" />
+      <Field Name="btnStart" Hidden="true" />
+      <Method Name="btnStart_Click" Hidden="true" />
+      <Field Name="btnTokens" Hidden="true" />
+      <Method Name="btnTokens_Click" Hidden="true" />
+      <Field Name="btnVariables" Hidden="true" />
+      <Method Name="btnVariables_Click" Hidden="true" />
+      <Field Name="checkBoxHTML" Hidden="true" />
+      <Method Name="checkBoxHTML_CheckedChanged" Hidden="true" />
+      <Field Name="checkBoxPriority" Hidden="true" />
+      <Method Name="checkBoxPriority_CheckedChanged" Hidden="true" />
+      <Field Name="checkBoxToken" Hidden="true" />
+      <Method Name="checkBoxToken_CheckedChanged" Hidden="true" />
+      <Field Name="checkBoxVariables" Hidden="true" />
+      <Method Name="checkBoxVariables_CheckedChanged" Hidden="true" />
+      <Field Name="comboBoxPriority" Hidden="true" />
+      <Method Name="comboBoxPriority_SelectedIndexChanged" Hidden="true" />
+      <Field Name="comboBoxTokens" Hidden="true" />
+      <Method Name="comboBoxTokens_Enter" Hidden="true" />
+      <Method Name="comboBoxTokens_SelectedIndexChanged" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="Exit_Click" Hidden="true" />
+      <Method Name="FireRequest_Click" Hidden="true" />
+      <Method Name="FrmNotify_FormClosing" Hidden="true" />
+      <Method Name="FrmNotify_Resize" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="labelPreviewTime" Hidden="true" />
+      <Field Name="labelProgress" Hidden="true" />
+      <Field Name="NotifyIcon" Hidden="true" />
+      <Method Name="Open_Click" Hidden="true" />
+      <Field Name="pictureBoxInternetConnection" Hidden="true" />
+      <Method Name="pictureBoxInternetConnection_Click" Hidden="true" />
+      <Field Name="pictureBoxPreview" Hidden="true" />
+      <Field Name="pingTimer" Hidden="true" />
+      <Method Name="PingTimer_Tick" Hidden="true" />
+      <Field Name="richTextBoxBody" Hidden="true" />
+      <Method Name="richTextBoxBody_TextChanged" Hidden="true" />
+      <Field Name="textBoxTitle" Hidden="true" />
+      <Method Name="textBoxTitle_TextChanged" Hidden="true" />
+      <Field Name="tokenIndex" Hidden="true" />
+      <Field Name="toolTip" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IEABIEARGKQGEIEEiGiBCMAC4XMBCFgmTUKCJBZACAA=</HashCode>
+      <FileName>FrmNotify.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.FrmSettings">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="btnAdd" Hidden="true" />
+      <Method Name="btnAdd_Click" Hidden="true" />
+      <Field Name="btnDel" Hidden="true" />
+      <Method Name="btnDel_Click" Hidden="true" />
+      <Field Name="btnGoogleDriveDirectLink" Hidden="true" />
+      <Method Name="btnGoogleDriveDirectLink_Click" Hidden="true" />
+      <Field Name="btnLogFile" Hidden="true" />
+      <Method Name="btnLogFile_Click" Hidden="true" />
+      <Field Name="btnRefresh" Hidden="true" />
+      <Method Name="btnRefresh_Click" Hidden="true" />
+      <Field Name="btnSave" Hidden="true" />
+      <Method Name="btnSave_Click" Hidden="true" />
+      <Field Name="btnShare" Hidden="true" />
+      <Method Name="btnShare_Click" Hidden="true" />
+      <Field Name="btnTokenFile" Hidden="true" />
+      <Method Name="btnTokenFile_Click" Hidden="true" />
+      <Field Name="btnUserToken" Hidden="true" />
+      <Method Name="btnUserToken_Click" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="checkBoxAdvancedPingTest" Hidden="true" />
+      <Field Name="checkBoxLocalFile" Hidden="true" />
+      <Method Name="checkBoxLocalFile_CheckedChanged" Hidden="true" />
+      <Field Name="checkBoxShowDownloadedContent" Hidden="true" />
+      <Method Name="checkBoxShowDownloadedContent_CheckedChanged" Hidden="true" />
+      <Field Name="comboBoxDefaultPriority" Hidden="true" />
+      <Field Name="comboBoxDefaultToken" Hidden="true" />
+      <Method Name="comboBoxDefaultToken_Enter" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataStore" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="FrmTokens_FormClosing" Hidden="true" />
+      <Field Name="groupBoxSettings" Hidden="true" />
+      <Field Name="groupBoxTokens" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="labelFileURL" Hidden="true" />
+      <Field Name="labelLogPath" Hidden="true" />
+      <Field Name="labelTokenID" Hidden="true" />
+      <Field Name="labelTokenName" Hidden="true" />
+      <Field Name="labelTokenPath" Hidden="true" />
+      <Field Name="labelUsertoken" Hidden="true" />
+      <Field Name="listBox" Hidden="true" />
+      <Method Name="listBox_SelectedIndexChanged" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+      <Field Name="pictureBox2" Hidden="true" />
+      <Field Name="pictureBox3" Hidden="true" />
+      <Field Name="pictureBox4" Hidden="true" />
+      <Field Name="pictureBox5" Hidden="true" />
+      <Field Name="pictureBox6" Hidden="true" />
+      <Field Name="pictureBoxLogCheck" Hidden="true" />
+      <Field Name="pictureBoxOfflinemode" Hidden="true" />
+      <Field Name="pictureBoxTokenFileCheck" Hidden="true" />
+      <Field Name="pictureBoxTokenURLCheck" Hidden="true" />
+      <Field Name="pictureBoxUserTokenCheck" Hidden="true" />
+      <Field Name="radioButtonJSON" Hidden="true" />
+      <Method Name="radioButtonJSON_CheckedChanged" Hidden="true" />
+      <Field Name="radioButtonStandard" Hidden="true" />
+      <Field Name="richTextBoxPreview" Hidden="true" />
+      <Field Name="textBoxLogPath" Hidden="true" />
+      <Method Name="textBoxLogPath_DoubleClick" Hidden="true" />
+      <Method Name="textBoxLogPath_TextChanged" Hidden="true" />
+      <Field Name="textBoxName" Hidden="true" />
+      <Method Name="textBoxName_TextChanged" Hidden="true" />
+      <Field Name="textBoxToken" Hidden="true" />
+      <Method Name="textBoxToken_TextChanged" Hidden="true" />
+      <Field Name="textBoxTokenPath" Hidden="true" />
+      <Method Name="textBoxTokenPath_DoubleClick" Hidden="true" />
+      <Method Name="textBoxTokenPath_TextChanged" Hidden="true" />
+      <Field Name="textBoxTokenURL" Hidden="true" />
+      <Method Name="textBoxTokenURL_DoubleClick" Hidden="true" />
+      <Method Name="textBoxTokenURL_TextChanged" Hidden="true" />
+      <Field Name="textBoxUsertoken" Hidden="true" />
+      <Method Name="textBoxUsertoken_DoubleClick" Hidden="true" />
+      <Field Name="toolTip" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EhAAJrkCQKAQKfAACUyAUTkCjAEMkVECIYhOAQLLADY=</HashCode>
+      <FileName>FrmSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.FrmLogin">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="btnLogin" Hidden="true" />
+      <Method Name="btnLogin_Click" Hidden="true" />
+      <Field Name="btnLogout" Hidden="true" />
+      <Method Name="btnLogout_Click" Hidden="true" />
+      <Field Name="checkBoxSave" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataStore" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="eMail" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="invalid" Hidden="true" />
+      <Field Name="labelDate" Hidden="true" />
+      <Field Name="labelInfo" Hidden="true" />
+      <Field Name="labelTimer" Hidden="true" />
+      <Field Name="labelUser" Hidden="true" />
+      <Field Name="manual" Hidden="true" />
+      <Field Name="password" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+      <Method Name="pictureBox1_DoubleClick" Hidden="true" />
+      <Field Name="textBoxEMail" Hidden="true" />
+      <Method Name="TextBoxEMail_GotFocus" Hidden="true" />
+      <Method Name="TextBoxEMail_Leave" Hidden="true" />
+      <Method Name="TextBoxEMail_TextChanged" Hidden="true" />
+      <Field Name="textBoxPassword" Hidden="true" />
+      <Method Name="TextBoxPassword_GotFocus" Hidden="true" />
+      <Method Name="TextBoxPassword_Leave" Hidden="true" />
+      <Method Name="TextBoxPassword_TextChanged" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAABA0AACAgANAQQACIABAyUAEACAEigQhwAyBAABA=</HashCode>
+      <FileName>FrmLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.DataStore">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="ChoiceButton1_Click" Hidden="true" />
+      <Method Name="ChoiceButton2_Click" Hidden="true" />
+      <Method Name="ChoiceButton3_Click" Hidden="true" />
+      <Property Name="fileUrl" Hidden="true" />
+      <Property Name="HasInternetConnection" Hidden="true" />
+      <Property Name="IsFileURLValid" Hidden="true" />
+      <Property Name="LogFilePath" Hidden="true" />
+      <Property Name="NotifyIsExecutable" Hidden="true" />
+      <Property Name="PingLatency" Hidden="true" />
+      <Property Name="Prioritys" Hidden="true" />
+      <Property Name="TokenFilePath" Hidden="true" />
+      <Property Name="TokenIDs" Hidden="true" />
+      <Property Name="TokenJSONList" Hidden="true" />
+      <Property Name="TokenNames" Hidden="true" />
+      <Property Name="UserToken" Hidden="true" />
+      <Property Name="Variables" Hidden="true" />
+      <Property Name="VariablesDesc" Hidden="true" />
+      <Field Name="webExceptionDialog" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IDIAAIEAAADIAOEGAAEBAAgBQgCA4RSxAFQCCACEYCg=</HashCode>
+      <FileName>DataStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.LoginDAO">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAiA=</HashCode>
+      <FileName>LoginDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.Networker">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIAAgQAAAAAAABAAACIAAACAAAEAAAQAIAAAIAAAAAA=</HashCode>
+      <FileName>Networker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.Supporter">
+    <Position X="6" Y="4" Width="1.5" />
+    <Members>
+      <Field Name="dataStore" Hidden="true" />
+      <Field Name="INDENT_STRING" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AACAAAAQABgAAEABAAABAAABAAEQAEAAABAAwAQAAhA=</HashCode>
+      <FileName>Supporter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.RequestDAO">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RequestDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.TokenDAO">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>TokenDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.TokenListDAO">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAgAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>TokenListDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Notify.FrmVariables">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAAAAAIAACAAAACAEkAAAAABAAAAAACAAA=</HashCode>
+      <FileName>FrmVariables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

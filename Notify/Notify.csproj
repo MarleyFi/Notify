@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B831335-B185-44C1-8E3D-FFCAB3C7A035}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Notify</RootNamespace>
+    <AssemblyName>Notify</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Notification.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pastebin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pastebin-Api.1.0.4.9\lib\net40\Pastebin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zlib.Portable">
+      <HintPath>..\packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonChoice.cs" />
+    <Compile Include="CustomEventArgs.cs" />
+    <Compile Include="DataStore.cs" />
+    <Compile Include="Exporter.cs" />
+    <Compile Include="FolderBrowserDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotify.Designer.cs">
+      <DependentUpon>FrmNotify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChoice.Designer.cs">
+      <DependentUpon>FrmChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVariables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVariables.Designer.cs">
+      <DependentUpon>FrmVariables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputMessageBox.Designer.cs">
+      <DependentUpon>InputMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDAO.cs" />
+    <Compile Include="Networker.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestDAO.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Supporter.cs" />
+    <Compile Include="TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TokenDAO.cs" />
+    <Compile Include="TokenListDAO.cs" />
+    <EmbeddedResource Include="FrmChoice.resx">
+      <DependentUpon>FrmChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotify.resx">
+      <DependentUpon>FrmNotify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVariables.resx">
+      <DependentUpon>FrmVariables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputMessageBox.resx">
+      <DependentUpon>InputMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="NotifyKlassendiagramm.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings.Designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Share24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Notification.ico" />
+    <None Include="Resources\Login32.png" />
+    <None Include="Resources\Pushover32.png" />
+    <None Include="Resources\JSON32.png" />
+    <None Include="Resources\List24.png" />
+    <None Include="Resources\Download24.png" />
+    <None Include="Resources\WifiSignal1_32.png" />
+    <None Include="Resources\WifiSignal0_32.png" />
+    <None Include="Resources\WifiSignalOff.png" />
+    <None Include="Resources\WifiSignal3_32.png" />
+    <None Include="Resources\WifiSignal2_32.png" />
+    <None Include="Resources\Exit24.png" />
+    <None Include="Resources\Notification32.png" />
+    <None Include="Resources\Notification.ico" />
+    <None Include="Resources\NotifyPreview.png" />
+    <None Include="Resources\Notify.png" />
+    <None Include="Resources\Dropbox32.png" />
+    <None Include="Resources\Dropbox24.png" />
+    <None Include="Resources\GoogleDrive24.png" />
+    <None Include="Resources\GoogleDrive128.png" />
+    <None Include="Resources\Pencil128.png" />
+    <None Include="Resources\Pushover512.png" />
+    <None Include="Resources\Cloud128.png" />
+    <None Include="Resources\Document128.png" />
+    <None Include="Resources\Tick32.png" />
+    <None Include="Resources\Star32.png" />
+    <None Include="Resources\Cmd32.png" />
+    <None Include="Resources\Shell32.png" />
+    <None Include="Resources\SettingsGear.ico" />
+    <None Include="Resources\Folder32.png" />
+    <None Include="Resources\ArrowRightGreen32.png" />
+    <None Include="Resources\ArrowRightGreen128.png" />
+    <None Include="Resources\Exclamation24.png" />
+    <None Include="Resources\Warning32.png" />
+    <None Include="Resources\Key24.png" />
+    <None Include="Resources\Signal24.png" />
+    <None Include="Resources\NoSignal24.png" />
+    <None Include="Resources\Pushover24.png" />
+    <None Include="Resources\Rename24.png" />
+    <None Include="Resources\Variable.ico" />
+    <None Include="Resources\Variable24.png" />
+    <None Include="Resources\Document24.png" />
+    <None Include="Resources\Notification24.png" />
+    <None Include="Resources\Info128.png" />
+    <None Include="Resources\SettingsGear.png" />
+    <None Include="Resources\Link24.png" />
+    <None Include="Resources\Clipboard24.png" />
+    <None Include="Resources\TickSmall.png" />
+    <None Include="Resources\Pencil.png" />
+    <None Include="Resources\Cloud24.png" />
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-csharp" />
+          <CSharpFormattingPolicy IndentSwitchBody="True" IndentBlocksInsideExpressions="True" AnonymousMethodBraceStyle="NextLine" PropertyBraceStyle="NextLine" PropertyGetBraceStyle="NextLine" PropertySetBraceStyle="NextLine" EventBraceStyle="NextLine" EventAddBraceStyle="NextLine" EventRemoveBraceStyle="NextLine" StatementBraceStyle="NextLine" ElseNewLinePlacement="NewLine" CatchNewLinePlacement="NewLine" FinallyNewLinePlacement="NewLine" WhileNewLinePlacement="DoNotCare" ArrayInitializerWrapping="DoNotChange" ArrayInitializerBraceStyle="NextLine" BeforeMethodDeclarationParentheses="False" BeforeMethodCallParentheses="False" BeforeConstructorDeclarationParentheses="False" NewLineBeforeConstructorInitializerColon="NewLine" NewLineAfterConstructorInitializerColon="SameLine" BeforeDelegateDeclarationParentheses="False" NewParentheses="False" SpacesBeforeBrackets="False" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
